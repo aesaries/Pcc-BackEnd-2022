@@ -1,0 +1,49 @@
+<div class="container" th:fragment="several_alerts">
+    <div  th:if="${newRegistro} == 'si'">
+              
+        <div class="alert alert-success" role="alert">
+          Registro agregado con Exito !!!
+        </div>
+        
+      </div>
+      <div th:unless="${newRegistro} == 'si'" >
+        
+        <!-- entra por primera vez  -->
+      </div>
+
+      <div  th:if="${delRegistro} == 'si'">
+          
+        <div class="alert alert-warning" role="alert">
+          Se ha eliminado un Registro !!!
+        </div>
+        
+      </div>
+      <div th:unless="${delRegistro} == 'si'" >
+        
+        <!-- entra por primera vez  -->
+      </div>
+
+      <div  th:if="${upRegistro} == 'si'">
+          
+        <div class="alert alert-primary" role="alert">
+          Modificacion Exitosa !!!
+        </div>
+        
+      </div>
+      <div th:unless="${upRegistro} == 'si'" >
+        
+        <!-- entra por primera vez  -->
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
